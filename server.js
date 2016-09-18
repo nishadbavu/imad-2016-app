@@ -11,6 +11,9 @@ app.get('/', function (req, res) {
 app.get('/article-one',function(req,res){
     res.send('Article one be requisted and send the server');
 });
+app.get('/article-two',function(req,res){
+    res.send("hello Iam Muhammed Nishad k Iam Good Man");
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
