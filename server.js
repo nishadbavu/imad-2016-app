@@ -14,6 +14,9 @@ app.get('/article-one',function(req,res){
 app.get('/article-two',function(req,res){
     res.send("hello Iam Muhammed Nishad k Iam Good Man");
 });
+app.get('/nishad',function(req,vd){
+vd.send("Hai Good Morning Gays");    
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
