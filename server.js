@@ -9,13 +9,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-one',function(req,res){
-    res.send('Article one be requisted and send the server');
-});
-app.get('/article-two',function(req,res){
-    res.send("hello Iam Muhammed Nishad k Iam Good Man");
-});
-app.get('/nishad',function(req,vd){
-vd.send("Hai Good Morning Gays");    
+    res.send('article one will be comming soon.....');
 });
 
 app.get('/ui/style.css', function (req, res) {
