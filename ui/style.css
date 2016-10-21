@@ -21,6 +21,11 @@ body {
     height: 200px;
 }
 .new{
-    border:solid 2px red;
+    border:solid 2px red;    border: solid 2px blue;
+    border-width: 3px 43px;
+    padding-top: 43px;
+    padding-bottom: 46px;
+    text-align: center;
+}
 }
 
