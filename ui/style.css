@@ -27,5 +27,8 @@ body {
     padding-bottom: 46px;
     text-align: center;
 }
+.cont{
+    max-width:800px;
+    margin:0 auto;
 }
 
