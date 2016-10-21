@@ -20,5 +20,7 @@ body {
 .img-medium {
     height: 200px;
 }
-
+.new{
+    border:solid 2px red;
+}
 
