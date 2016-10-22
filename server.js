@@ -4,10 +4,17 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articleone={
-    title:'this is my artcle',
-    hedding:'Article one',
-    par:`<p>This is my article paragraph<p>`
+var articles={
+var articleone: { title:'this is my artcle',  hedding:'Article one', par:`<p>This is my article paragraph</p>`},
+var articletwo:{
+     title:'this is my 2nd artcle',
+    hedding:'Article two',
+    par:`<p>This is my article two paragraph</p>`
+},
+var articlethree:{
+    title:'this is my 3rd artcle',
+    hedding:'Article three',
+    par:`<p>This is my article three paragraph<p>`}
 };
 function create(data){
     var t=data.title;
