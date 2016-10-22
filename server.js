@@ -10,22 +10,22 @@ var articleone={
     par:`<p>This is my article paragraph<p>`
 };
 function create(data){
-    var title=data.title;
-    var hedding=data.hedding;
-    var par=data.par;
+    var t=data.title;
+    var hedd=data.hedding;
+    var p=data.par;
 var htmlTemplate=
     `<html>
     <head>
     <link rel="stylesheet" type="text/css" href="ui/style.css">
-    <title>${title}</title>
+    <title>${t}</title>
     </head>
     <body>
     <div class="cont">
     <div>
-    <h1 class="new">${hedding}</h1>
+    <h1 class="new">${hedd}</h1>
     </div>
     <div>
-    ${par}
+    ${p}
     </div>
     </div>
     </body>
