@@ -5,6 +5,26 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleone=
+{
+    title:'article one for nishad',
+    hedding:'article one',
+    date: 'Oct 20 2016',
+    content: `
+            <p>
+                This is a content of my first article.This is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first article
+            </p>
+            <p>
+                This is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first article
+            </p>
+            <p>
+                This is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first article
+            </p>`,
+            
+     
+};
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
