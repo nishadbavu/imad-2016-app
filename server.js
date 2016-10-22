@@ -19,7 +19,7 @@ var articleone=
             </p>
             <p>
                 This is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first article
-            </p>`,
+            </p>`
             
      
 };
