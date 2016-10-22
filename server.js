@@ -4,6 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var articles{
 
 var articleone=
 {
@@ -22,7 +23,24 @@ var articleone=
             </p>`
             
      
-};
+},
+var articletwo={
+    title:'This is my second article',
+    hedding:'article two',
+    date: 'Oct 20 2016',
+    content: `
+            <p>
+                This is a content of my first article.This is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first article
+            </p>
+            <p>
+                This is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first article
+            </p>
+            <p>
+                This is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first article
+            </p>`}
+var articlethree={}
+}
+
 function createTemplate(data)
 {
     var title=data.title;
