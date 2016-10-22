@@ -4,81 +4,34 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articles{
-
-var articleone=
-{
-    title:'article one for nishad',
-    hedding:'article one',
-    date: 'Oct 20 2016',
-    content: `
-            <p>
-                This is a content of my first article.This is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first article
-            </p>
-            <p>
-                This is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first article
-            </p>
-            <p>
-                This is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first article
-            </p>`
-            
-     
-},
-var articletwo={
-    title:'This is my second article',
-    hedding:'article two',
-    date: 'Oct 20 2016',
-    content: `
-            <p>
-                This is a content of my first article.This is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first article
-            </p>
-            <p>
-                This is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first article
-            </p>
-            <p>
-                This is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first articleThis is a content of my first article
-            </p>`}
-var articlethree={}
-}
-
-function createTemplate(data)
-{
+var articleone={
+    title:'this is my artcle',
+    hedding:'Article one',
+    par:`<p>This is my article paragraph<p>`
+};
+function create(data){
     var title=data.title;
     var hedding=data.hedding;
-    var date=data.date;
-    var content=data.content;
+    var par=data.par;
 var htmlTemplate=
-`
-<html>
+    `<html>
     <head>
-        <meta name="viewport" content="width=device-width initial-scale=1">
-        <title>${title} </title>
-        <link rel="stylesheet" type="text/css" href="ui/style.css">
+    <link rel="stylesheet" type="text/css" href="ui/style.css">
+    <title>${title}</title>
     </head>
     <body>
-        <div class="cont">
-        <div>
-            <a href="/">Home</a>
-        </div>
-        <hr/>
-        <h1 class="new">${hedding}</h1>
-        <div>
-            <div>
-                ${date}
-            </div>
-           
-        </div>
-        <div>
-        ${content}
-        </div>
-        </div>
+    <div class="cont">
+    <div>
+    <h1 class="new">${hedding}</h1>
+    </div>
+    <div>
+    ${par}
+    </div>
+    </div>
     </body>
-</html>
-`;
-return(htmlTemplate);
+    </html>`;
+    return(htmlTemplate);
 }
-
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -86,7 +39,7 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 app.get('/article-one',function(req,res){
-    res.send(createTemplate(articleone));
+    res.send(create(articleone));
 });
 app.get('/Article-two',function(req,res){
     res.sendFile(path.join(__dirname,'ui','article-two.html'));
